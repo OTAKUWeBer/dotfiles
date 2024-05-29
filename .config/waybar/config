@@ -1,0 +1,55 @@
+{
+    "height": 20,
+    "layer": "top",
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode",
+        "sway/scratchpad"
+    ],
+    "modules-center": [
+        "clock",
+        "custom/exit"
+    ],
+    "modules-right": [
+        "bluetooth",
+        "backlight",
+        "battery",
+        "pulseaudio",
+        "tray"
+    ],
+    "clock": {
+        "format-alt": "{:%a, %d. %b %H:%M}"
+    },
+    "bluetooth": {
+        "format": " {status}",
+        "format-disabled": "",
+        "format-connected": " {num_connections} connected",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "on-click": "/home/weberz/toggle_bluetooth.sh"
+    },
+    "battery": {
+        "format": "{capacity}%🔋 ",
+        "format-alt": "{capacity}%🔋 ",
+        "tooltip": false,
+        "interval": 30
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{percent}% {icon}",
+        "format-icons": ["🔆 ", "🌞 "]
+    },
+    "pulseaudio": {
+        "format": "{volume}%🔊 ",
+        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
+        "on-click": "pavucontrol"
+
+    },
+    "custom/exit": {
+        "format": " ⏻ ",
+        "on-click": "shutdown now",
+        "tooltip": false
+    }
+}

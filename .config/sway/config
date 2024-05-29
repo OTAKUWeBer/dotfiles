@@ -40,11 +40,11 @@ client.unfocused         $overlay0 $base $text  $rosewater $overlay0
 client.urgent            $peach    $base $peach $overlay0  $peach
 client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
 client.background        $base
+exec swaybg -i /home/weberz/imps/wallpaper/github/forrest.png -m fill
 
 # exec daemons
 exec nm-applet
 exec mako
-exec ~/assets/bins/swww-daemon
 
 # clipboard stuff
 exec wl-clip-persist --clipboard both
@@ -56,13 +56,13 @@ bindsym $mod+Alt+c exec rm ~/.cache/cliphist/db
 # border
 for_window [app_id="firefox"] border none
 for_window [app_id="Waydroid"] border none
+
 default_border pixel 2
 default_floating_border pixel 2
 
 focus_follows_mouse no
 
-# setbg
-exec ~/assets/bins/swww img $(find $HOME/dotfiles/assets/wallpapers/live -type f | shuf -n1)  --transition-step 255
+
 
 # screenshot and screen recording
 bindsym $mod+Print exec grim -g "$(slurp -d)" - | wl-copy
@@ -214,3 +214,4 @@ bar {
 }
 
 include /etc/sway/config.d/*
+input 1267:12631:ASUE1409:00_04F3:3157_Touchpad events disabled_on_external_mouse

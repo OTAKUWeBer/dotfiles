@@ -1,11 +1,11 @@
-# Colors
-
-font=CaskaydiaCove Nerd Font 10
-background-color=#1e1e2e
-text-color=#cdd6f4
-border-color=#f38ba8
-progress-color=over #313244
-default-timeout=5000
-
-[urgency=high]
-border-color=#fab387
+[mako]
+font=Monospace 10
+width=300
+height=80
+margin=10
+padding=10
+border_size=2
+border_color=#ffffff
+background_color=#282c34
+text_color=#ffffff
+default_timeout=5000
