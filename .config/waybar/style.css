@@ -72,7 +72,7 @@ window#waybar.hidden {
     color:antiquewhite;
 }
 #pulseaudio {
-    color:antiquewhite;
+    color:rgb(246, 215, 250);
 }
 
 #tray {
