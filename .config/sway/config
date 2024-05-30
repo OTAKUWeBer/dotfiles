@@ -40,7 +40,7 @@ client.unfocused         $overlay0 $base $text  $rosewater $overlay0
 client.urgent            $peach    $base $peach $overlay0  $peach
 client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
 client.background        $base
-exec swaybg -i /home/weberz/imps/wallpaper/github/forrest.png -m fill
+exec swaybg -i /home/weberz/dotfiles/assets/wallpapers/static/forrest.png -m fill
 
 # exec daemons
 exec nm-applet
