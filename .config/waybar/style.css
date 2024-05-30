@@ -47,8 +47,7 @@ window#waybar.hidden {
     color: #1e1e2e;
 }
 
-#clock,
-#tray {
+#clock {
     padding: 3px 4px;
     margin: 3px;
     border-radius: 4px;
@@ -62,20 +61,6 @@ window#waybar.hidden {
     border: none;
 }
 
-/* Bluetooth Module */
-#bluetooth {
-    padding: 3px 4px;
-    margin: 3px;
-    border-radius: 4px;
-    background-color: #f38ba8; /* Background color */
-    color: #181825; /* Text color */
-    border: solid #f38ba8 1px; /* Border color */
-}
-
-#bluetooth:hover {
-    background-color: #f38ba8; /* Background color on hover */
-    color: #1e1e2e; /* Text color on hover */
-}
 #custom-exit {
     color: antiquewhite;
 
@@ -88,4 +73,22 @@ window#waybar.hidden {
 }
 #pulseaudio {
     color:antiquewhite;
+}
+
+#tray {
+    padding: 3px 4px;
+    margin: 3px;
+    border-radius: 4px;
+    background-color: #1e1e2e;
+    color: #181825;
+    border: solid #f38ba8 1px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
 }
