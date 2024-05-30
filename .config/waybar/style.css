@@ -67,7 +67,7 @@ window#waybar.hidden {
     padding: 3px 4px;
     margin: 3px;
     border-radius: 4px;
-    background-color: #9270a0; /* Background color */
+    background-color: #f38ba8; /* Background color */
     color: #181825; /* Text color */
     border: solid #f38ba8 1px; /* Border color */
 }
@@ -77,12 +77,7 @@ window#waybar.hidden {
     color: #1e1e2e; /* Text color on hover */
 }
 #custom-exit {
-    padding: 3px 4px;
-    margin: 3px;
-    border-radius: 4px;
-    background-color: #f38ba8; /* Background color */
-    color: #181825; /* Text color */
-    border: solid #000000 1px;
+    color: antiquewhite;
 
 }
 #backlight {

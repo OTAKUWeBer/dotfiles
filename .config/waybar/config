@@ -31,7 +31,6 @@
     },
     "battery": {
         "format": "{capacity}%🔋 ",
-        "format-alt": "{capacity}%🔋 ",
         "tooltip": false,
         "interval": 30
     },
