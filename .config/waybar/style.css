@@ -33,17 +33,17 @@ window#waybar.hidden {
     box-shadow: inherit;
     text-shadow: inherit;
     color: #1e1e2e;
-    background-color: #f38ba8;
+    background-color: #c970cc;
 }
 
 
 #workspaces button.focused {
     color: #1e1e2e;
-    background-color: #f38ba8;
+    background-color: #c970cc;
 }
 
 #workspaces button.urgent {
-    background-color: #f38ba8;
+    background-color: #c970cc;
     color: #1e1e2e;
 }
 
@@ -53,11 +53,11 @@ window#waybar.hidden {
     border-radius: 4px;
     background-color: #1e1e2e;
     color: #181825;
-    border: solid #f38ba8 1px;
+    border: solid #c970cc 1px;
 }
 
 #clock {
-    background-color: #f38ba8;
+    background-color: #c970cc;
     border: none;
 }
 
@@ -81,7 +81,7 @@ window#waybar.hidden {
     border-radius: 4px;
     background-color: #1e1e2e;
     color: #181825;
-    border: solid #f38ba8 1px;
+    border: solid #c970cc 1px;
 }
 
 #tray > .passive {
