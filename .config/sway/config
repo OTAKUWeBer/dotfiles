@@ -59,7 +59,7 @@ for_window [app_id="Waydroid"] border none
 for_window [instance="code"] border none
 
 
-default_border pixel 1
+default_border pixel 2
 default_floating_border pixel 2
 
 focus_follows_mouse no
