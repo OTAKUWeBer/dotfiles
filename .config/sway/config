@@ -68,10 +68,22 @@ focus_follows_mouse no
 
 # screenshot and screen recording
 bindsym $mod+Print exec grim -g "$(slurp -d)" - | wl-copy
+bindsym F11 exec grim -g "$(slurp -d)" - | wl-copy
 bindsym Print exec grim - | wl-copy
 
 bindsym $mod+Shift+Print exec ~/assets/bins/recorder_wrapper
 bindsym $mod+Shift+Ctrl+Print exec pkill --signal SIGINT wf-recorder
+
+
+# Sound Controls
+bindsym F1 exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym F2 exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym F3 exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+
+# Brightness Controls
+bindsym F4 exec brightnessctl set 5%-
+bindsym F5 exec brightnessctl set 5%+
 
 # terminal
 bindsym $mod+Return exec $term
