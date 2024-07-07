@@ -6,24 +6,28 @@ This repository contains my personal dotfiles and configuration for setting up a
 
 1. **Install Arch Linux**: Install Arch Linux using any method you prefer.
 
-2. **Chroot into your fresh Arch installation**:
+2. **Chroot into your fresh Arch installation**.
 
-3. **Install essential packages**:
+3. **Install `git`**:
     ```bash
-    sudo pacman -Syu base-devel networkmanager network-manager-applet pipewire pavucontrol waybar bemenu-wayland foot wireguard-tools gnome-keyring git resolvconf xorg-xwayland mako cliphist github-cli stow sway zsh nodejs npm slurp grim thunar polkit xdg-desktop-portal xdg-desktop-portal-wlr vlc ttf-cascadia-code-nerd
+    sudo pacman -S git
     ```
 
-4. **Install AUR helper (paru)**:
+4. **Clone and apply dotfiles**:
     ```bash
-    cd /tmp
-    git clone https://aur.archlinux.org/paru-bin.git
-    cd paru-bin
-    makepkg -si
+    cd ~/
+    git clone https://github.com/OTAKUWeBer/dotfiles
+    cd dotfiles
+    git submodule init
+    git submodule update --depth=1
+    stow -v .
     ```
 
-5. **Install additional packages using `paru`**:
+5. **Run the installation script**:
     ```bash
-    paru -S wl-clip-persist-git catppuccin-gtk-theme-mocha papirus-folders-catppuccin-git
+    cd ~/dotfiles
+    chmod +x install-packages.sh
+    ./install-packages.sh
     ```
 
 6. **Exit chroot and reboot**:
@@ -36,16 +40,6 @@ This repository contains my personal dotfiles and configuration for setting up a
     ```bash
     sudo systemctl enable --now NetworkManager.service
     sudo systemctl enable --now systemd-resolved.service
-    ```
-
-8. **Clone and apply dotfiles**:
-    ```bash
-    cd ~/
-    git clone https://github.com/OTAKUWeBer/dotfiles
-    cd dotfiles
-    git submodule init
-    git submodule update --depth=1
-    stow -v .
     ```
 
 ## Additional Configuration
