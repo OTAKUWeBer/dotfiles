@@ -72,7 +72,10 @@ bindsym F11 exec grim -g "$(slurp -d)" - | wl-copy
 bindsym Print exec grim - | wl-copy
 
 bindsym Shift+F11 exec ~/assets/bins/recorder_wrapper
+bindsym $mod+Shift+Print exec ~/assets/bins/recorder_wrapper
+
 bindsym $mod+Shift+F11 exec pkill --signal SIGINT wf-recorder
+bindsym $mod+Shift+Ctrl+Print exec pkill --signal SIGINT wf-recorder
 
 
 # Sound Controls
