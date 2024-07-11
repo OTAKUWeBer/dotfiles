@@ -40,8 +40,6 @@ client.unfocused         $overlay0 $base $text  $rosewater $overlay0
 client.urgent            $peach    $base $peach $overlay0  $peach
 client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
 client.background        $base
-
-# wallpaper
 exec swaybg -i ~/dotfiles/assets/wallpapers/static/forrest.png -m fill
 
 # exec daemons
@@ -229,11 +227,6 @@ bar {
     swaybar_command waybar
 }
 
-# GTK settings
-set $gnome-schema org.gnome.desktop.interface
-exec_always {
-    gsettings set $gnome-schema color-scheme 'prefer-dark'
-}
-
 include /etc/sway/config.d/*
 input 1267:12631:ASUE1409:00_04F3:3157_Touchpad events disabled_on_external_mouse
+
