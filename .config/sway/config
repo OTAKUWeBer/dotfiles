@@ -42,7 +42,7 @@ client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
 client.background        $base
 
 # wallpaper
-exec swaybg -i ~/dotfiles/assets/wallpapers/static/forrest.png -m fill
+exec swaybg -i ~/dotfiles/assets/wallpapers/static/rail_asth.jpg -m fill
 
 # exec daemons
 exec nm-applet
