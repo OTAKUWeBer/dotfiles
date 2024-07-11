@@ -32,27 +32,27 @@ window#waybar.hidden {
 #workspaces button:hover {
     box-shadow: inherit;
     text-shadow: inherit;
-    color: #1e1e2e;
+    color: #0f0f17;
     background-color: #bf36c4;
 }
 
 
 #workspaces button.focused {
-    color: #1e1e2e;
+    color: #0f0f17;
     background-color: #bf36c4;
 }
 
 #workspaces button.urgent {
     background-color: #bf36c4;
-    color: #1e1e2e;
+    color: #0f0f17;
 }
 
 #clock {
     padding: 3px 4px;
     margin: 3px;
     border-radius: 4px;
-    background-color: #1e1e2e;
-    color: #181825;
+    background-color: #0f0f17;
+    color: #0f0f17;
     border: solid #bf36c4 1px;
 }
 
@@ -79,8 +79,8 @@ window#waybar.hidden {
     padding: 3px 4px;
     margin: 3px;
     border-radius: 4px;
-    background-color: #1e1e2e;
-    color: #181825;
+    background-color: #0f0f17;
+    color: #0f0f17;
     border: solid #bf36c4 1px;
 }
 
