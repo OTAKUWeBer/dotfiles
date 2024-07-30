@@ -12,7 +12,7 @@ if ! command -v paru &> /dev/null; then
 fi
 
 # Update and install packages with pacman
-sudo pacman -Syu --noconfirm base-devel networkmanager network-manager-applet pipewire pavucontrol waybar bemenu-wayland foot wireguard-tools gnome-keyring git resolvconf xorg-xwayland mako cliphist github-cli stow sway zsh nodejs npm slurp grim thunar polkit xdg-desktop-portal xdg-desktop-portal-wlr vlc ttf-cascadia-code-nerd
+sudo pacman -Syu --noconfirm firefox base-devel networkmanager network-manager-applet pipewire pavucontrol waybar wf-recorder bemenu-wayland foot wireguard-tools gnome-keyring git resolvconf xorg-xwayland mako cliphist github-cli stow sway zsh nodejs npm slurp grim thunar polkit xdg-desktop-portal xdg-desktop-portal-wlr vlc ttf-cascadia-code-nerd
 
 # Install AUR packages with paru
-paru -S --noconfirm wl-clip-persist-git catppuccin-gtk-theme-mocha papirus-folders-catppuccin-git swaylock oh-my-zsh swaybg wf-recorder brightnessctl swaynag pulseaudio noto-fonts-emoji
+paru -S --noconfirm wl-clip-persist-git catppuccin-gtk-theme-mocha papirus-folders-catppuccin-git swaylock oh-my-zsh swaybg brightnessctl swaynag pulseaudio noto-fonts-emoji blueman
