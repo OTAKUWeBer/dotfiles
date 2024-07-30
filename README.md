@@ -44,7 +44,8 @@ This repository contains my personal dotfiles and configuration for setting up a
 
 8. **Activating zsh**
     ```bash
-    chsh -s $(which zsh)```
+    chsh -s $(which zsh)
+    ```
     
 ## Additional Configuration
 
