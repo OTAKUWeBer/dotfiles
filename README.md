@@ -42,6 +42,9 @@ This repository contains my personal dotfiles and configuration for setting up a
     sudo systemctl enable --now systemd-resolved.service
     ```
 
+8. **Activating zsh***
+    ```chsh -s $(which zsh)```
+    
 ## Additional Configuration
 
 Ensure to customize the configuration files as needed to suit your preferences. 
