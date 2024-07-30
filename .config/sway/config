@@ -59,7 +59,9 @@ bindsym $mod+Alt+c exec rm ~/.cache/cliphist/db
 for_window [app_id="firefox"] border none
 for_window [app_id="Waydroid"] border none
 for_window [instance="code"] border none
-for_window [instance="wine"] border none
+for_window [class="explorer.exe"] border none
+for_window [instance="explorer.exe"] border none
+for_window [title="Default - Wine desktop"] border none
 
 
 default_border pixel 2
