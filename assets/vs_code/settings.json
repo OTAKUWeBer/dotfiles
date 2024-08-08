@@ -1,9 +1,9 @@
 {
     // Preferred dark theme for the workbench
-    "workbench.preferredDarkColorTheme": "Sweet vscode",
+    "workbench.preferredDarkColorTheme": "NarutoDark",
     
     // Current color theme for the workbench
-    "workbench.colorTheme": "Sweet vscode",
+    "workbench.colorTheme": "NarutoDark",
     
     // Customizations for the color scheme
     "workbench.colorCustomizations": {
@@ -35,7 +35,7 @@
         "statusBar.debuggingForeground": "#e4e4e4",
         
         // Border color of the status bar
-        "statusBar.border": "#0059ff",
+        "statusBar.border": "#0059ff"
 
     },
     
@@ -58,5 +58,6 @@
     "console-ninja.featureSet": "Community",
     "tabnine.experimentalAutoImports": true,
     "git.autofetch": true,
-    "git.openRepositoryInParentFolders": "never"
+    "git.openRepositoryInParentFolders": "never",
+    "settingsSync.ignoredSettings": []
 }
