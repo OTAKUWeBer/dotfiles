@@ -26,8 +26,8 @@ This repository contains my personal dotfiles and configuration for setting up a
 5. **Run the installation script**:
     ```bash
     cd ~/dotfiles
-    chmod +x install-packages.sh
-    ./install-packages.sh
+    chmod +x install-est.sh
+    ./install-est.sh
     ```
 
 6. **Exit chroot and reboot**:
@@ -40,6 +40,9 @@ This repository contains my personal dotfiles and configuration for setting up a
     ```bash
     sudo systemctl enable --now NetworkManager.service
     sudo systemctl enable --now systemd-resolved.service
+    cd ~/dotfiles
+    chmod +x install-pkg.sh
+    ./install-pkg.sh
     ```
 
 8. **Activating zsh**
