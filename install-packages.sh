@@ -8,7 +8,6 @@ if ! command -v paru &> /dev/null; then
     cd paru-bin
     makepkg -si --noconfirm
     cd ..
-    rm -rf paru-bin
 fi
 
 # Update and install packages with pacman
