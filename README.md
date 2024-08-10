@@ -11,8 +11,29 @@ This repository contains my personal dotfiles and configuration for setting up a
 3. **Install `git`**:
     ```bash
     sudo pacman -S git
+ 
+    ```
+4. **Run the installation script**:
+    ```bash
+    cd ~/
+    git clone https://github.com/OTAKUWeBer/dotfiles
+    cd ~/dotfiles
+    chmod +x install-est.sh
+    ./install-est.sh
     ```
 
+5. **Exit chroot and reboot**:
+    ```bash
+    exit
+    reboot
+    ```
+
+6. **Enable and start NetworkManager and systemd-resolved services**:
+    ```bash
+    sudo systemctl enable --now NetworkManager.service
+    sudo systemctl enable --now systemd-resolved.service
+    ```
+    
 4. **Clone and apply dotfiles**:
     ```bash
     cd ~/
@@ -21,25 +42,6 @@ This repository contains my personal dotfiles and configuration for setting up a
     git submodule init
     git submodule update --depth=1
     stow -v .
-    ```
-
-5. **Run the installation script**:
-    ```bash
-    cd ~/dotfiles
-    chmod +x install-est.sh
-    ./install-est.sh
-    ```
-
-6. **Exit chroot and reboot**:
-    ```bash
-    exit
-    reboot
-    ```
-
-7. **Enable and start NetworkManager and systemd-resolved services**:
-    ```bash
-    sudo systemctl enable --now NetworkManager.service
-    sudo systemctl enable --now systemd-resolved.service
     cd ~/dotfiles
     chmod +x install-pkg.sh
     ./install-pkg.sh
