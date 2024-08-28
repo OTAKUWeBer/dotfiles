@@ -20,6 +20,8 @@ This repository contains my personal dotfiles and configuration for setting up a
     cd ~/dotfiles
     chmod +x install-est.sh
     ./install-est.sh
+    cd ..
+    rm -rf dotfiles
     ```
 
 5. **Exit chroot and reboot**:
@@ -42,6 +44,11 @@ This repository contains my personal dotfiles and configuration for setting up a
     git submodule init
     git submodule update --depth=1
     stow -v .
+    cd /tmp
+    git clone https://aur.archlinux.org/paru.git
+    cd paru
+    makepkg -si
+
     cd ~/dotfiles
     chmod +x install-pkg.sh
     ./install-pkg.sh
