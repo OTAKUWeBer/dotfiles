@@ -17,7 +17,7 @@ fn main() {
         .arg(file_path)
         .arg("-g")
         .arg(slurp())
-        .arg("--audio=alsa_output.pci-0000_00_0e.0.analog-stereo.monitor")
+        .arg("--audio=alsa_output.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-stereo-output.monitor")
         .stderr(Stdio::piped())
         .spawn()
         .expect("Failed to spawn process");
