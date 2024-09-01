@@ -41,10 +41,8 @@ client.urgent            $peach    $base $peach $overlay0  $peach
 client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
 client.background        $base
 
-# wallpaper
-exec swaybg -i ~/dotfiles/assets/wallpapers/static/road_asth.jpg -m fill
-
 # exec daemons
+exec swww-daemon --format xrgb
 exec nm-applet
 exec mako
 
@@ -63,6 +61,8 @@ for_window [class="explorer.exe"] border none
 for_window [instance="explorer.exe"] border none
 for_window [title="Default - Wine desktop"] border none
 
+# wallpaper
+exec swww ~/dotfiles/assets/wallpapers/live/mario-pc.gif  --transition-step 255 
 
 default_border pixel 2
 default_floating_border pixel 2
@@ -75,10 +75,8 @@ focus_follows_mouse no
 bindsym $mod+Print exec grim -g "$(slurp -d)" - | wl-copy
 bindsym Print exec grim - | wl-copy
 
-bindsym Shift+F11 exec ~/assets/bins/recorder_wrapper
 bindsym $mod+Shift+Print exec ~/assets/bins/recorder_wrapper
 
-bindsym $mod+Shift+F11 exec pkill --signal SIGINT wf-recorder
 bindsym $mod+Shift+Ctrl+Print exec pkill --signal SIGINT wf-recorder
 
 
