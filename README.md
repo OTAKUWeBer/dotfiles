@@ -38,20 +38,21 @@ This repository contains my personal dotfiles and configuration for setting up a
     
 4. **Clone and apply dotfiles**:
     ```bash
+    cd /tmp
+    git clone https://aur.archlinux.org/paru-bin.git
+    cd paru-bin
+    makepkg -si
+    
     cd ~/
     git clone https://github.com/OTAKUWeBer/dotfiles
     cd dotfiles
     git submodule init
     git submodule update --depth=1
     stow -v .
-    cd /tmp
-    git clone https://aur.archlinux.org/paru.git
-    cd paru
-    makepkg -si
 
     cd ~/dotfiles
     chmod +x install-pkg.sh
-    ./install-pkg.sh
+    ./install-pkgs.sh
     ```
 
 8. **Activating zsh**

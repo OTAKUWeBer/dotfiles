@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Install AUR packages with paru
-paru -S wl-clip-persist-git catppuccin-gtk-theme-mocha papirus-folders-catppuccin-git swaylock oh-my-zsh swaybg brightnessctl swaynag noto-fonts-emoji blueman visual-studio-code-bin vlc ttf-cascadia-code-nerd
+paru -S swww wl-clip-persist-git catppuccin-gtk-theme-mocha papirus-folders-catppuccin-git swaylock oh-my-zsh swaybg brightnessctl swaynag noto-fonts-emoji blueman vlc ttf-cascadia-code-nerd
