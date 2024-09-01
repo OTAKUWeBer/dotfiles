@@ -1,1 +1,1 @@
-export BEMENU_OPTS='--single-instance --fb "#0f0f17" --ff "#cdd6f4" --nb "#0f0f17" --nf "#cdd6f4" --tb "#0f0f17" --hb "#0f0f17" --tf "#74c7ec" --hf "#f9e2af" --af "#cdd6f4" --ab "#0f0f17" -b'
+export BEMENU_OPTS='--single-instance --fb "#141420" --ff "#cdd6f4" --nb "#141420" --nf "#cdd6f4" --tb "#141420" --hb "#141420" --tf "#74c7ec" --hf "#f9e2af" --af "#cdd6f4" --ab "#141420" -b'

@@ -5,11 +5,10 @@ from typing import Any
 
 from base import run_shell_command
 
-CONFIG_PATH = os.path.expanduser("~/.config/sway/config.d/wallpaper.conf")
+CONFIG_PATH = os.path.expanduser("~/dotfiles/.config/sway/config.d/wallpaper.conf")
 CONFIG_TEMPLATE_PATH = "./templates/wallpaper_template.conf"
 
 WALLPAPERS_PATH = os.path.expanduser("~/dotfiles/assets/wallpapers")
-SWWW_PATH = os.path.expanduser("~/dotfiles/assets/sys_bins/swww")
 
 
 def get_random_wallpaper(color: str, path: str) -> str | None:
@@ -56,5 +55,5 @@ def update(_: str, color: str, extra_options: dict[str, Any]):
         f.write(new_file)
 
     run_shell_command(
-        f"{SWWW_PATH} img {os.path.join(wallpapers_path, wall_name)} --transition-step 255"
+        f"swww img {os.path.join(wallpapers_path, wall_name)} --transition-step 255"
     )

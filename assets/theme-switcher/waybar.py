@@ -3,7 +3,7 @@ import os
 
 from base import base_update
 
-CONFIG_PATH = os.path.expanduser("~/.config/waybar/style.css")
+CONFIG_PATH = os.path.expanduser("~/dotfiles/.config/waybar/style.css")
 CONFIG_TEMPLATE_PATH = "./templates/waybar_template.css"
 
 

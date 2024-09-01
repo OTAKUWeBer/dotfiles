@@ -4,7 +4,7 @@
 }
 
 window#waybar {
-    background-color: #0f0f17;
+    background-color: #141420;
     transition-property: background-color;
     transition-duration: 0.5s;
 }
@@ -19,8 +19,8 @@ window#waybar.hidden {
 
 #workspaces button {
     padding: 0px;
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: 0px;
     min-width: 0;
     box-shadow: inset 0 -3px transparent;
@@ -32,32 +32,28 @@ window#waybar.hidden {
 #workspaces button:hover {
     box-shadow: inherit;
     text-shadow: inherit;
-    color: #0f0f17;
-    background-color: #74c7ec;
+    color: #fab387;
 }
 
 
 #workspaces button.focused {
-    color: #0f0f17;
-    background-color: #74c7ec;
+    color: #fab387;
 }
 
 #workspaces button.urgent {
-    background-color: #74c7ec;
-    color: #0f0f17;
+    color: #f38ba8;
+}
+
+
+#clock,
+#tray {
+    padding-right: 3px;
+    padding-left: 3px;
 }
 
 #clock {
-    padding: 3px 4px;
-    margin: 3px;
-    border-radius: 4px;
-    background-color: #0f0f17;
-    color: #0f0f17;
-    border: solid #74c7ec 1px;
-}
-
-#clock {
-    background-color: #74c7ec;
+    background-color: transparent;
+    color: #fab387;
     border: none;
 }
 
@@ -79,9 +75,9 @@ window#waybar.hidden {
     padding: 3px 4px;
     margin: 3px;
     border-radius: 4px;
-    background-color: #0f0f17;
-    color: #0f0f17;
-    border: solid #74c7ec 1px;
+    background-color: #141420;
+    color: #141420;
+    border: solid #fab387 1px;
 }
 
 #tray > .passive {

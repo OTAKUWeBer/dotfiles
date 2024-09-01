@@ -3,7 +3,7 @@ import os
 
 from base import base_update, run_shell_command
 
-CONFIG_PATH = os.path.expanduser("~/.config/sway/config.d/theme.conf")
+CONFIG_PATH = os.path.expanduser("~/dotfiles/.config/sway/config.d/theme.conf")
 CONFIG_TEMPLATE_PATH = "./templates/sway_template.conf"
 
 

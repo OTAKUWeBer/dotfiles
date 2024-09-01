@@ -44,6 +44,7 @@ window#waybar.hidden {
     color: {{red}};
 }
 
+
 #clock,
 #tray {
     padding-right: 3px;
@@ -54,4 +55,36 @@ window#waybar.hidden {
     background-color: transparent;
     color: {{main_colorscheme}};
     border: none;
+}
+
+#custom-exit {
+    color: antiquewhite;
+
+}
+#backlight {
+    color:antiquewhite;
+}
+#battery {
+    color:antiquewhite;
+}
+#pulseaudio {
+    color:rgb(246, 215, 250);
+}
+
+#tray {
+    padding: 3px 4px;
+    margin: 3px;
+    border-radius: 4px;
+    background-color: #141420;
+    color: #141420;
+    border: solid {{main_colorscheme}} 1px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
 }
