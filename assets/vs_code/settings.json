@@ -3,7 +3,7 @@
     "workbench.preferredDarkColorTheme": "NarutoDark",
     
     // Current color theme for the workbench
-    "workbench.colorTheme": "NarutoDark",
+    "workbench.colorTheme": "GitHub Dark High Contrast",
     
     // Customizations for the color scheme
     "workbench.colorCustomizations": {
