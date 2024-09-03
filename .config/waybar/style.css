@@ -4,7 +4,7 @@
 }
 
 window#waybar {
-    background-color: #141420;
+    background-color: #1e1e2e;
     transition-property: background-color;
     transition-duration: 0.5s;
 }
@@ -44,47 +44,22 @@ window#waybar.hidden {
     color: #f38ba8;
 }
 
-
-#clock,
-#tray {
-    padding-right: 3px;
-    padding-left: 3px;
+#pulseaudio,
+#memory,
+#cpu,
+#clock{
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
+#tray{
+    padding-right: 5px;
+    padding-left: 4px;
+}
+
+#custom-divider,
 #clock {
     background-color: transparent;
     color: #fab387;
     border: none;
-}
-
-#custom-exit {
-    color: antiquewhite;
-
-}
-#backlight {
-    color:antiquewhite;
-}
-#battery {
-    color:antiquewhite;
-}
-#pulseaudio {
-    color:rgb(246, 215, 250);
-}
-
-#tray {
-    padding: 3px 4px;
-    margin: 3px;
-    border-radius: 4px;
-    background-color: #141420;
-    color: #141420;
-    border: solid #fab387 1px;
-}
-
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
 }
