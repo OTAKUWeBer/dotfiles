@@ -63,3 +63,7 @@ window#waybar.hidden {
     color: {{main_colorscheme}};
     border: none;
 }
+
+#custom-exit{
+    color: #2c2c2c;
+}
