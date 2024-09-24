@@ -51,7 +51,7 @@ This repository contains my personal dotfiles and configuration for setting up a
     stow -v .
 
     cd ~/dotfiles
-    chmod +x install-pkg.sh
+    chmod +x install-pkgs.sh
     ./install-pkgs.sh
     ```
 
