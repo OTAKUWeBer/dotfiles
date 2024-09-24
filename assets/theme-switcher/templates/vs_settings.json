@@ -14,7 +14,7 @@
         "activityBar.foreground": "{{main_colorscheme}}",
         
         // Border color of the activity bar
-        "activityBar.border": "#4b3114",
+        "activityBar.border": "{{main_colorscheme}}",
         
         // Background color of the status bar when the window is active
         "statusBar.background": "#080808",
@@ -35,7 +35,7 @@
         "statusBar.debuggingForeground": "#e4e4e4",
         
         // Border color of the status bar
-        "statusBar.border": "#644633"
+        "statusBar.border": "{{main_colorscheme}}"
 
     },
     
