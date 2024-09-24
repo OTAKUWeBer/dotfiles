@@ -11,7 +11,7 @@
         "activityBar.background": "#0f0f0f",
         
         // Foreground color (icon color) of the activity bar
-        "activityBar.foreground": "#fab387",
+        "activityBar.foreground": "#89b4fa",
         
         // Border color of the activity bar
         "activityBar.border": "#4b3114",
@@ -20,7 +20,7 @@
         "statusBar.background": "#080808",
         
         // Foreground color (text color) of the status bar when the window is active
-        "statusBar.foreground": "#fab387",
+        "statusBar.foreground": "#89b4fa",
         
         // Background color of the status bar when no folder is open
         "statusBar.noFolderBackground": "#080808",

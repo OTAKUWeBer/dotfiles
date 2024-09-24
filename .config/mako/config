@@ -1,7 +1,7 @@
 font=Monospace 10
 background-color=#141420
 text-color=#cdd6f4
-border-color=#fab387
+border-color=#89b4fa
 progress-color=over #313244
 default-timeout=5000
 
