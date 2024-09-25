@@ -40,6 +40,10 @@ window#waybar.hidden {
     color: #74c7ec;
 }
 
+#workspaces button.active {
+    color: #74c7ec;
+}
+
 #workspaces button.urgent {
     color: #f38ba8;
 }
