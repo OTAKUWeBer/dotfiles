@@ -2,9 +2,6 @@
     "height": 20,
     "layer": "top",
     "modules-left": [
-        "sway/workspaces",
-        "sway/mode",
-        "sway/scratchpad",
         "hyprland/workspaces",
         "hyprland/mode",
         "hyprland/scratchpad"
