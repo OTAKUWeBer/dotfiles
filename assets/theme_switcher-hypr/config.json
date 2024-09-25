@@ -1,13 +1,13 @@
 {
     "flavour": "mocha",
-    "color": "sapphire",
+    "color": "blue",
     "exclude": [
         "firefox"
     ],
     "extra_options": {
         "wallpaper": {
-            "wallpaper_type": "live",
-            "wall_name": null
+            "wallpaper_type": "static",
+            "wall_name": "street-tn.png"
         }
     }
 }
