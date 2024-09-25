@@ -4,7 +4,10 @@
     "modules-left": [
         "sway/workspaces",
         "sway/mode",
-        "sway/scratchpad"
+        "sway/scratchpad",
+        "hyprland/workspaces",
+        "hyprland/mode",
+        "hyprland/scratchpad"
     ],
     "modules-center": [
         "clock",
@@ -107,3 +110,4 @@
         "spacing": 5
     }
 }
+
