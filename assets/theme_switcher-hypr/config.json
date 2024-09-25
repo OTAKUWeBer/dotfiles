@@ -1,13 +1,13 @@
 {
     "flavour": "mocha",
-    "color": "blue",
+    "color": "peach",
     "exclude": [
         "firefox"
     ],
     "extra_options": {
         "wallpaper": {
             "wallpaper_type": "static",
-            "wall_name": "street-tn.png"
+            "wall_name": null
         }
     }
 }
