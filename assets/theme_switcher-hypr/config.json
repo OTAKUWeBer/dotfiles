@@ -1,13 +1,13 @@
 {
     "flavour": "mocha",
-    "color": "blue",
+    "color": "pink",
     "exclude": [
         "firefox"
     ],
     "extra_options": {
         "wallpaper": {
-            "wallpaper_type": "static",
-            "wall_name": "blue-tokyo-rain.png"
+            "wallpaper_type": "live",
+            "wall_name": null
         }
     }
 }
