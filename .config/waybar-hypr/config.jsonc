@@ -79,7 +79,7 @@
     },
     "custom/exit": {
         "format": " ⏻ ",
-        "on-click": "shutdown now",
+        "on-click": "wlogout",
         "tooltip": false
     },
 
