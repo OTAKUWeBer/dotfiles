@@ -7,7 +7,6 @@
         "hyprland/scratchpad"
     ],
     "modules-center": [
-        "custom/mako",
         "clock",
         "custom/exit"
     ],
@@ -81,12 +80,6 @@
     "custom/exit": {
         "format": " ⏻ ",
         "on-click": "shutdown now",
-        "tooltip": false
-    },
-    "custom/mako": {
-        "exec": "~/dotfiles/assets/bins/notification_count.sh",
-        "interval": 5,
-        "format": "Notifications: {}",
         "tooltip": false
     },
 
