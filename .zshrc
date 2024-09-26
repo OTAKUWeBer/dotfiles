@@ -124,3 +124,5 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 PATH=~/.console-ninja/.bin:$PATH
+neofetch
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
