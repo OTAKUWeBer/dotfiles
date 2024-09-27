@@ -42,24 +42,29 @@
             "on-scroll-down": "shift_down"
         }
     },
-    "battery": {
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{capacity}%🔋 ",
-        "format-full": "{capacity}%🔋 ",
-        "format-charging": "{capacity}%⚡ ",
-        "format-plugged": "{capacity}%⚡ ",
-        "format-critical": "{capacity}%🪫 "
-
-    },
-    "backlight": {
-        "device": "intel_backlight",
-        "format": "{percent}%{icon}",
-        "format-icons": ["🔆 ", "🌞 "]
-    },
+    // "battery": {
+    //     "interval": 15,
+    //     "format-icons": [
+    //       "",
+    //       "",
+    //       "",
+    //       "",
+    //       ""
+    //     ],
+    //     "format": "{icon}  {capacity}%",
+    //     "format-charging": " {capacity}%",
+    //     "format-plugged": " {capacity}%",
+    //     "format-alt": "{icon}  {time}",
+    //     "states": {
+    //       "warning": 25,
+    //       "critical": 15
+    //     }
+    // },
+    // "backlight": {
+    //     "device": "intel_backlight",
+    //     "format": "{percent}%{icon}",
+    //     "format-icons": ["󰃞", "󰃟", "󰃠"]
+    // },
     "pulseaudio": {
         "max-volume": 150,
         "scroll-step": 5,

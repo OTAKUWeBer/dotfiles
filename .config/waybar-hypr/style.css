@@ -4,9 +4,9 @@
 }
 
 window#waybar {
-    background: rgba(30, 30, 30, 0.3);
-    border: none;
-    color: #ffffff;
+    background-color: #1e1e2e;
+    transition-property: background-color;
+    transition-duration: 0.5s;
 }
 
 window#waybar.hidden {
@@ -45,7 +45,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.urgent {
-    color: #f38ba8;
+    color: #af0909;
 }
 
 #pulseaudio,
