@@ -51,6 +51,7 @@ window#waybar.hidden {
 #pulseaudio,
 #memory,
 #cpu,
+#temperature,
 #clock{
     padding-right: 5px;
     padding-left: 5px;
