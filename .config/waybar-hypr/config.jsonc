@@ -11,8 +11,10 @@
         "custom/exit"
     ],
     "modules-right": [
+        // "backlight",
         "pulseaudio",
         "custom/divider",
+        // "battery",
         "memory",
         "cpu",
         "custom/divider",
