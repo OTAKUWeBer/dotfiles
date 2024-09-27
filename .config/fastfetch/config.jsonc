@@ -54,7 +54,7 @@
         },
         {
             "type": "uptime",
-            "key": " ",
+            "key": "󰄉 ",
             "keyColor": "33"
         },
         {
@@ -62,12 +62,12 @@
             "key": "󰝚 ",
             "keyColor": "33"
         },
+        // {
+        //     "type": "custom",
+        //     "format": "                      "
+        // },
         "break",
-        {
-            "type": "custom",
-            "format": "                      "
-        },
-        "break",
+        "colors",
         "break"
     ]
 }

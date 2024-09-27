@@ -1,3 +1,6 @@
+# Auto run on every termibal open
+fastfetch
+
 export EDITOR=nvim
 
 #aliases
@@ -124,5 +127,6 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 PATH=~/.console-ninja/.bin:$PATH
-neofetch
+
+# Removes warning msg for auto (#1)
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
