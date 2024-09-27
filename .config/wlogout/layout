@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "swaylock --image ~/dotfiles/assets/wallpapers/static/arch-black-4k.png",
+    "action" : "bash ~/dotfiles/assets/scripts/swaylock.sh",
     "text" : "Lock",
     "keybind" : "l"
 }
