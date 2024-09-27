@@ -4,9 +4,9 @@
 }
 
 window#waybar {
-    background-color: #1e1e2e;
-    transition-property: background-color;
-    transition-duration: 0.5s;
+    background: rgba(30, 30, 30, 0.3);
+    border: none;
+    color: #ffffff;
 }
 
 window#waybar.hidden {
