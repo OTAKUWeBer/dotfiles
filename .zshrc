@@ -1,5 +1,8 @@
 # Auto run on every termibal open
-fastfetch
+if [[ "$TERM_PROGRAM" != "vscode" ]]; then
+    fastfetch
+fi
+
 
 export EDITOR=nvim
 
