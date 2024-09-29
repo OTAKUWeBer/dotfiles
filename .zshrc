@@ -1,8 +1,12 @@
 # Auto run on every terminal open
-# Run Fastfetch only in interactive, non-login shells and outside VS Code
-if [[ "$TERM_PROGRAM" != "vscode" && "$-" == *i* && -z "$SSH_CONNECTION" ]]; then
-    fastfetch
+# Check if we're in a TTY session and don't run Fastfetch there
+if [[ -n "$DISPLAY" || -n "$WAYLAND_DISPLAY" ]]; then
+    # Only run Fastfetch if not in VS Code and in a graphical environment
+    if [[ "$TERM_PROGRAM" != "vscode" && "$-" == *i* ]]; then
+        fastfetch
+    fi
 fi
+
 
 
 
