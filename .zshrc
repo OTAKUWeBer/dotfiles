@@ -1,14 +1,11 @@
 # Auto run on every terminal open
 # Check if we're in a TTY session and don't run Fastfetch there
 if [[ -n "$DISPLAY" || -n "$WAYLAND_DISPLAY" ]]; then
-    # Only run Fastfetch if not in VS Code and in a graphical environment
-    if [[ "$TERM_PROGRAM" != "vscode" && "$-" == *i* ]]; then
+    # Only run Fastfetch if not in VS Code
+    if [[ "$TERM_PROGRAM" != "vscode" ]]; then
         fastfetch
     fi
 fi
-
-
-
 
 export EDITOR=nvim
 
