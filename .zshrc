@@ -1,7 +1,9 @@
-# Auto run on every termibal open
-if [[ "$TERM_PROGRAM" != "vscode" ]]; then
+# Auto run on every terminal open
+# Run Fastfetch only in interactive, non-login shells and outside VS Code
+if [[ "$TERM_PROGRAM" != "vscode" && "$-" == *i* && -z "$SSH_CONNECTION" ]]; then
     fastfetch
 fi
+
 
 
 export EDITOR=nvim
@@ -131,5 +133,5 @@ source $ZSH/oh-my-zsh.sh
 
 PATH=~/.console-ninja/.bin:$PATH
 
-# Removes warning msg for auto (#1)
+# Removes warning msg for auto terminal commands when open (line: 1)
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
