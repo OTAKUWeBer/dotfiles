@@ -136,3 +136,6 @@ PATH=~/.console-ninja/.bin:$PATH
 
 # Removes warning msg for auto terminal commands when open (line: 1)
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+# Initialize zoxide for faster directory navigation
+eval "$(zoxide init zsh)"
