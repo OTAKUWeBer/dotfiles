@@ -17,7 +17,7 @@ This repository contains my personal dotfiles and configuration for setting up a
     ```bash
     cd ~/
     git clone https://github.com/OTAKUWeBer/dotfiles
-    cd ~/dotfiles
+    cd dotfiles
     chmod +x install-est.sh
     ./install-est.sh
     cd ..
@@ -50,7 +50,7 @@ This repository contains my personal dotfiles and configuration for setting up a
     git submodule update --depth=1
     stow -v .
 
-    cd ~/dotfiles
+    cd dotfiles
     chmod +x install-pkgs.sh
     ./install-pkgs.sh
     ```
