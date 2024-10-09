@@ -98,7 +98,7 @@
             "high": 70,
             "critical": 90
         },
-        "on-click": "foot -e btop",
+        "on-click": "alacritty -e btop",
         "tooltip-format": "{used} GB/{total} GB used ({percentage}%)\n{swapUsed} GB/{swapTotal} GB swap used ({swapPercentage}%)"
     },
     "cpu": {
@@ -107,7 +107,7 @@
             "high": 70,
             "critical": 90
         },
-        "on-click": "foot -e btop"
+        "on-click": "alacritty -e btop"
     },
     "temperature": {
         "thermal-zone": 2,
@@ -115,7 +115,7 @@
         "critical-threshold": 80,
         "format-critical": "{temperatureC}°C ",
         "format": "{temperatureC}°C ",
-        "on-click": "foot -e btop"
+        "on-click": "alacritty -e btop"
     },
     "custom/divider": {
         "format": "|",
