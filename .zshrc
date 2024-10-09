@@ -3,6 +3,7 @@
 if [[ -n "$DISPLAY" || -n "$WAYLAND_DISPLAY" ]]; then
     # Only run Fastfetch if not in VS Code
     if [[ "$TERM_PROGRAM" != "vscode" ]]; then
+        ~/dotfiles/assets/scripts/set_wallpaper_colors.sh
         fastfetch
     fi
 fi
@@ -139,3 +140,5 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 # Initialize zoxide for faster directory navigation
 eval "$(zoxide init zsh)"
+
+
