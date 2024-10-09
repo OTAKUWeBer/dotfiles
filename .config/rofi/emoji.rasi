@@ -1,6 +1,5 @@
 * {
-    font: "Montserrat 9";
-
+    font: "Montserrat 9";   
     bg0:  #24242480;
     bg1:  #363636;
     bg2:  #f5f5f520;
