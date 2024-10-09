@@ -1,10 +1,10 @@
 import json
 import os
-from base import run_shell_command
+
 from base import base_update
 
-CONFIG_PATH = os.path.expanduser("~/dotfiles/.config/waybar-hypr/style.css")
-CONFIG_TEMPLATE_PATH = "./templates/waybar_template.css"
+CONFIG_PATH = os.path.expanduser("~/dotfiles/.config/rofi/emoji.rasi")
+CONFIG_TEMPLATE_PATH = "./templates/rofi_emoji.rasi"
 
 
 def update(flavour: str, color: str, _):
