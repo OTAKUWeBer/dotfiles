@@ -1,6 +1,5 @@
 import json
 import os
-from base import run_shell_command
 from base import base_update
 
 CONFIG_PATH = os.path.expanduser("~/dotfiles/.config/waybar-hypr/style.css")
