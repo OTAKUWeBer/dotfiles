@@ -3,7 +3,7 @@
 if [[ -n "$DISPLAY" || -n "$WAYLAND_DISPLAY" ]]; then
     # Only run Fastfetch if not in VS Code
     if [[ "$TERM_PROGRAM" != "vscode" ]]; then
-        ~/dotfiles/assets/scripts/set_wallpaper_colors.sh
+        ~/dotfiles/assets/scripts/set_terminal_colors.sh
         fastfetch
     fi
 fi
