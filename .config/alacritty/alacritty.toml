@@ -1,0 +1,54 @@
+[font]
+size = 12.0
+
+[font.bold]
+family = "CaskaydiaCove Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "CaskaydiaCove Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "CaskaydiaCove Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "CaskaydiaCove Nerd Font"
+style = "Regular"
+
+[window]
+opacity = 0.7
+blur = true
+
+[window.padding]
+x = 10
+y = 15
+
+[selection]
+save_to_clipboard = true
+
+[colors.normal]
+black =   '#312b2d'
+red =     '#cc0403'
+green =   '#19cb00'
+yellow =  '#cecb00'
+blue =    '#0d73cc'
+magenta = '#cb1ed1'
+cyan =    '#0dcdcd'
+white =   '#dddddd'
+
+[colors.bright]
+black =   '#767676'
+red =     '#f2201f'
+green =   '#23fd00'
+yellow =  '#fffd00'
+blue =    '#1a8fff'
+magenta = '#fd28ff'
+cyan =    '#14ffff'
+white =   '#ffffff'
+
+[colors.primary]
+background = "#000000"
+foreground = "#ffffff"
+

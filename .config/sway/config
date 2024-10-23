@@ -1,0 +1,13 @@
+set $mod Mod4
+set $left h
+set $down j
+set $up k
+set $right l
+set $term foot
+set $menu bemenu-run 
+
+focus_follows_mouse no
+
+
+include /etc/sway/config.d/*
+include config.d/*

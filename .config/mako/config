@@ -1,0 +1,9 @@
+font=Monospace 10
+background-color=#141420
+text-color=#cdd6f4
+border-color=#fab387
+progress-color=over #313244
+default-timeout=5000
+
+[urgency=high]
+border-color=#fab387

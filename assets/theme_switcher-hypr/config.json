@@ -1,0 +1,13 @@
+{
+    "flavour": "mocha",
+    "color": "peach",
+    "exclude": [
+        "firefox"
+    ],
+    "extra_options": {
+        "wallpaper": {
+            "wallpaper_type": "live",
+            "wall_name": "peach-festival.gif"
+        }
+    }
+}

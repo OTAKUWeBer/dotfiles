@@ -1,0 +1,64 @@
+{
+    // Preferred dark theme for the workbench
+    "workbench.preferredDarkColorTheme": "NarutoDark",
+    
+    // Current color theme for the workbench
+    "workbench.colorTheme": "GitHub Dark High Contrast",
+    
+    // Customizations for the color scheme
+    "workbench.colorCustomizations": {
+        // Background color of the activity bar
+        "activityBar.background": "#0f0f0f",
+        
+        // Foreground color (icon color) of the activity bar
+        "activityBar.foreground": "#fab387",
+        
+        // Border color of the activity bar
+        "activityBar.border": "#fab387",
+        
+        // Background color of the status bar when the window is active
+        "statusBar.background": "#080808",
+        
+        // Foreground color (text color) of the status bar when the window is active
+        "statusBar.foreground": "#fab387",
+        
+        // Background color of the status bar when no folder is open
+        "statusBar.noFolderBackground": "#080808",
+        
+        // Foreground color (text color) of the status bar when no folder is open
+        "statusBar.noFolderForeground": "#e4e4e4",
+        
+        // Background color of the status bar when debugging
+        "statusBar.debuggingBackground": "#080808",
+        
+        // Foreground color (text color) of the status bar when debugging
+        "statusBar.debuggingForeground": "#e4e4e4",
+        
+        // Border color of the status bar
+        "statusBar.border": "#fab387"
+
+    },
+    
+    // Icon theme for the workbench
+    "workbench.iconTheme": "material-icon-theme",
+    
+    // Menu bar visibility setting
+    "window.menuBarVisibility": "toggle",
+    "json.schemas": [
+
+    
+    ],
+    "terminal.integrated.env.linux": {},
+    "workbench.startupEditor": "none",
+    "launch": {
+        "configurations": [],
+        "compounds": []
+    },
+    "editor.cursorSmoothCaretAnimation": "on",
+    "console-ninja.featureSet": "Community",
+    "tabnine.experimentalAutoImports": true,
+    "git.autofetch": true,
+    "git.openRepositoryInParentFolders": "never",
+    "settingsSync.ignoredSettings": [],
+    "terminal.integrated.env.windows": {}
+}
