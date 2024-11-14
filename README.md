@@ -18,8 +18,8 @@ This repository contains my personal dotfiles and configuration for setting up a
     cd ~/
     git clone https://github.com/OTAKUWeBer/dotfiles
     cd dotfiles
-    sudo chmod +x install-est.sh
-    sudo ./install-est.sh
+    chmod +x install-est.sh
+    ./install-est.sh
     cd ..
     rm -rf dotfiles
     ```
@@ -51,8 +51,8 @@ This repository contains my personal dotfiles and configuration for setting up a
     stow -v .
 
     cd dotfiles
-    sudo chmod +x install-pkgs.sh
-    sudo ./install-pkgs.sh
+    chmod +x install-pkgs.sh
+    ./install-pkgs.sh
     ```
 
 8. **Activating zsh**
