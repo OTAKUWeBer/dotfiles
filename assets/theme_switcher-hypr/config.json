@@ -1,6 +1,6 @@
 {
     "flavour": "mocha",
-    "color": "pink",
+    "color": "peach",
     "exclude": [
         "firefox"
     ],
