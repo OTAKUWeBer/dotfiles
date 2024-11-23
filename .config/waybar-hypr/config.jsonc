@@ -5,6 +5,7 @@
         "hyprland/workspaces",
         "hyprland/mode",
         "hyprland/scratchpad"
+        // "hyprland/window"
     ],
     "modules-center": [
         "clock",
@@ -124,5 +125,14 @@
     "tray": {
         "spacing": 5
     }
+    // "hyprland/window": {
+    //     "icon": true,
+    //     "icon-size": 18,
+    //     "rewrite": {
+    //         "(.*) — Mozilla Firefox": "$1 - 🦊",
+    //         "(.*) - Visual Studio Code": "$1 - 󰨞 ",
+    //         "(.*) - Discord": "$1 - 󰙯 "           
+    //     }
+    // }
 }
 
