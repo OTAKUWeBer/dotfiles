@@ -2,7 +2,8 @@
     "flavour": "mocha",
     "color": "peach",
     "exclude": [
-        "firefox"
+        "firefox",
+        "zshenv"
     ],
     "extra_options": {
         "wallpaper": {
