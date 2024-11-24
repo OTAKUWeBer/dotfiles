@@ -9,9 +9,13 @@ if [[ -n "$DISPLAY" || -n "$WAYLAND_DISPLAY" ]]; then
 fi
 
 export EDITOR=nvim
+export GTK_THEME=$(gsettings get org.gnome.desktop.interface gtk-theme | tr -d "'")
 
 #aliases
 alias ch_wipe='rm ~/.cache/cliphist/db'
+alias wu="wg-quick up nl"
+alias wd="wg-quick down nl"
+alias cd="z"
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -101,7 +105,7 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
-
+source ~/dotfiles/assets/omz-custom/.zsh_files/catppuccin_mocha-zsh-syntax-highlighting.zsh
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
