@@ -59,7 +59,11 @@ This repository contains my personal dotfiles and configuration for setting up a
     ```bash
     chsh -s $(which zsh)
     ```
-    
+
+## Keybinds
+
+Check the [keybinds.md](https://github.com/OTAKUWeBer/dotfiles/blob/main/keybinds.md) file for the keybind list.  
+
 ## Additional Configuration
 
 Ensure to customize the configuration files as needed to suit your preferences. 
