@@ -85,8 +85,3 @@
 | Windows + P                       | Toggle pseudo-tiling (Dwindle).           |
 | Windows + J                       | Toggle split (Dwindle).                   |
 | Windows + SHIFT + E               | Exit session.                             |
-
----
-
-## **Notes**
-- **Windows** refers to your configured modifier key (e.g., Super/Windows key).
