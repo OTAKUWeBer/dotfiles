@@ -3,7 +3,7 @@
 if [[ -n "$DISPLAY" || -n "$WAYLAND_DISPLAY" ]]; then
     # Only run Fastfetch if not in VS Code
     if [[ "$TERM_PROGRAM" != "vscode" ]]; then
-#        ~/dotfiles/assets/scripts/set_terminal_colors.sh # Comment this line for real colors of terminal
+#        ~/assets/scripts/set_terminal_colors.sh # Comment this line for real colors of terminal
         fastfetch
     fi
 fi
@@ -30,7 +30,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-source ~/dotfiles/assets/omz-custom/.zsh_files/catppuccin_mocha-zsh-syntax-highlighting.zsh
+source ~/assets/omz-custom/.zsh_files/catppuccin_mocha-zsh-syntax-highlighting.zsh
 # now load zsh-syntax-highlighting plugin
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
@@ -97,7 +97,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM="$HOME/dotfiles/assets/omz-custom"
+ZSH_CUSTOM="$HOME/assets/omz-custom"
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
