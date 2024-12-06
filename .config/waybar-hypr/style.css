@@ -32,16 +32,16 @@ window#waybar.hidden {
 #workspaces button:hover {
     box-shadow: inherit;
     text-shadow: inherit;
-    color: #f5c2e7;
+    color: #89dceb;
 }
 
 
 #workspaces button.focused {
-    color: #f5c2e7;
+    color: #89dceb;
 }
 
 #workspaces button.active {
-    color: #f5c2e7;
+    color: #89dceb;
 }
 
 #workspaces button.urgent {
@@ -65,7 +65,7 @@ window#waybar.hidden {
 #custom-divider,
 #clock {
     background-color: transparent;
-    color: #f5c2e7;
+    color: #89dceb;
     border: none;
 }
 

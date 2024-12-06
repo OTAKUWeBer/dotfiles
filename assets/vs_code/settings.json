@@ -11,16 +11,16 @@
         "activityBar.background": "#0f0f0f",
         
         // Foreground color (icon color) of the activity bar
-        "activityBar.foreground": "#f5c2e7",
+        "activityBar.foreground": "#89dceb",
         
         // Border color of the activity bar
-        "activityBar.border": "#f5c2e7",
+        "activityBar.border": "#89dceb",
         
         // Background color of the status bar when the window is active
         "statusBar.background": "#080808",
         
         // Foreground color (text color) of the status bar when the window is active
-        "statusBar.foreground": "#f5c2e7",
+        "statusBar.foreground": "#89dceb",
         
         // Background color of the status bar when no folder is open
         "statusBar.noFolderBackground": "#080808",
@@ -35,7 +35,7 @@
         "statusBar.debuggingForeground": "#e4e4e4",
         
         // Border color of the status bar
-        "statusBar.border": "#f5c2e7"
+        "statusBar.border": "#89dceb"
 
     },
     
@@ -60,5 +60,6 @@
     "git.autofetch": true,
     "git.openRepositoryInParentFolders": "never",
     "settingsSync.ignoredSettings": [],
-    "terminal.integrated.env.windows": {}
+    "terminal.integrated.env.windows": {},
+    "code-runner.runInTerminal": true
 }
