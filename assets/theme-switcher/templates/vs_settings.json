@@ -60,5 +60,6 @@
     "git.autofetch": true,
     "git.openRepositoryInParentFolders": "never",
     "settingsSync.ignoredSettings": [],
-    "terminal.integrated.env.windows": {}
+    "terminal.integrated.env.windows": {},
+    "code-runner.runInTerminal": true
 }
