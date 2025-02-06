@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "bash ~/dotfiles/assets/scripts/swaylock.sh",
+    "action" : "bash ~/.config/wlogout/scripts/lock.sh",
     "text" : "Lock",
     "keybind" : "l"
 }
@@ -12,7 +12,7 @@
 }
 {
     "label" : "logout",
-    "action" : "bash ~/dotfiles/.config/wlogout/scripts/logout.sh",
+    "action" : "bash ~/.config/wlogout/scripts/logout.sh",
     "text" : "Logout",
     "keybind" : "e"
 }
