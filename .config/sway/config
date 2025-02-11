@@ -1,7 +1,7 @@
 set $mod Mod4
 set $left h
 set $down j
-set $up k
+set $up o
 set $right l
 set $term foot
 set $menu fuzzel -I
