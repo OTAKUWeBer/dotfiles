@@ -1,0 +1,35 @@
+[Groups/0]
+# Group Name
+Name=Default
+# Layout
+Default Layout=us
+# Default Input Method
+DefaultIM=openbangla
+
+[Groups/0/Items/0]
+# Name
+Name=keyboard-us
+# Layout
+Layout=
+
+[Groups/0/Items/1]
+# Name
+Name=openbangla
+# Layout
+Layout=
+
+[Groups/0/Items/2]
+# Name
+Name=m17n_bn_unijoy
+# Layout
+Layout=
+
+[Groups/0/Items/3]
+# Name
+Name=m17n_ja_tcode
+# Layout
+Layout=
+
+[GroupOrder]
+0=Default
+
