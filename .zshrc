@@ -20,7 +20,7 @@ alias cd="z"
 
 #pkg
 alias searchpkg="paru -Ss"
-alias install="paru -S"
+alias install="paru -S --skipreview"
 alias uninstall="paru -Rss"
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
