@@ -1,12 +1,14 @@
 * {
     font-family: CaskaydiaCove Nerd Font;
     font-size: 13px;
+    margin: 0;
+    padding: 0;
 }
 
 window#waybar {
     background: rgba(30, 30, 30, 0.6);
     border: none;
-    color: #ffffff;
+    color: #cdd6f4;
 }
 
 window#waybar.hidden {
@@ -32,21 +34,27 @@ window#waybar.hidden {
 #workspaces button:hover {
     box-shadow: inherit;
     text-shadow: inherit;
-    color: #89dceb;
+    color: #fab387;
 }
 
 
 #workspaces button.focused {
-    color: #89dceb;
+    color: #fab387;
 }
 
 #workspaces button.active {
-    color: #89dceb;
+    color: #fab387;
 }
 
 #workspaces button.urgent {
     color: #af0909;
 }
+
+#window {
+    color: #fab387; /* Default color for window names */
+    background-color: transparent;
+}
+
 
 #pulseaudio,
 #memory,
@@ -57,7 +65,16 @@ window#waybar.hidden {
     padding-left: 5px;
 }
 
-#tray{
+/* Hover states for modules */
+#pulseaudio:hover,
+#memory:hover,
+#cpu:hover,
+#temperature:hover,
+#clock:hover {
+    color: #fab387;
+}
+
+#tray {
     padding-right: 5px;
     padding-left: 4px;
 }
@@ -65,7 +82,7 @@ window#waybar.hidden {
 #custom-divider,
 #clock {
     background-color: transparent;
-    color: #89dceb;
+    color: #fab387;
     border: none;
 }
 
