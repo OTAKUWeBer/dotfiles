@@ -21,11 +21,11 @@ vim.keymap.set("i", "<C-w>", "<Esc>:bd<CR>", { desc = "Close Buffer in Insert Mo
 
 -- COMMENT TOGGLE (requires Comment.nvim)
 -- Normal mode
-vim.keymap.set("n", "<C-/>", "gcc", { remap = true, desc = "Toggle Comment" })
+vim.keymap.set("n", "<C-s-/>", "gcc", { remap = true, desc = "Toggle Comment" })
 -- Insert mode
-vim.keymap.set("i", "<C-/>", "<Esc>gccA", { remap = true, desc = "Toggle Comment in Insert Mode" })
+vim.keymap.set("i", "<C-s-/>", "<Esc>gccA", { remap = true, desc = "Toggle Comment in Insert Mode" })
 -- Visual mode
-vim.keymap.set("v", "<C-/>", "gc", { remap = true, desc = "Toggle Comment (Visual)" })
+vim.keymap.set("v", "<C-s-/>", "gc", { remap = true, desc = "Toggle Comment (Visual)" })
 
 -- SELECT ALL (Ctrl+A)
 vim.keymap.set("n", "<C-a>", "ggVG", { desc = "Select All" })
@@ -34,3 +34,23 @@ vim.keymap.set("i", "<C-a>", "<Esc>ggVG", { desc = "Select All from Insert Mode"
 -- FIND / SEARCH (like Ctrl+F)
 vim.keymap.set("n", "<C-f>", "/", { desc = "Search Forward" })
 vim.keymap.set("i", "<C-f>", "<Esc>/", { desc = "Search from Insert Mode" })
+
+-- TOGGLE TERMINAL like VS Code (Ctrl + `)
+vim.keymap.set("n", "<C-`>", function()
+  -- Toggle terminal (split or floating)
+  local term_buf = vim.fn.bufnr("term://*")
+  if vim.fn.bufexists(term_buf) == 1 then
+    vim.cmd("bdelete! " .. term_buf) -- Close if already open
+  else
+    vim.cmd("split | terminal") -- Or use `vsplit` or a floating terminal plugin
+  end
+end, { desc = "Toggle Terminal" })
+
+vim.keymap.set("t", "<C-`>", [[<C-\><C-n>:bd!<CR>]], { desc = "Close Terminal", noremap = true })
+
+
+vim.keymap.set("n", "<leader>cs", function()
+  require("telescope.builtin").colorscheme({
+    enable_preview = true, -- live preview as you move
+  })
+end, { desc = "Choose colorscheme" })

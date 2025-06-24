@@ -7,8 +7,9 @@
 -- * add extra plugins
 -- * disable/enabled LazyVim plugins
 -- * override the configuration of LazyVim plugins
+opts = { dashboard = { enabled = false } }
+
 return {
-  -- add gruvbox
   { "ellisonleao/gruvbox.nvim" },
   { "morhetz/gruvbox" },
   { "navarasu/onedark.nvim" },
@@ -36,7 +37,7 @@ return {
         settings  = {
           dart = {
             showTodos            = true,
-            completeFunctionCalls = true,
+            completeFunctionCalls = false,
           },
         },
       }
@@ -199,11 +200,6 @@ return {
     end,
   },
 
-  -- use mini.starter instead of alpha
-  { import = "lazyvim.plugins.extras.ui.mini-starter" },
-
-  -- add jsonls and schemastore packages, and setup treesitter for json, json5 and jsonc
-  { import = "lazyvim.plugins.extras.lang.json" },
 
   -- add any tools you want to have installed below
   {

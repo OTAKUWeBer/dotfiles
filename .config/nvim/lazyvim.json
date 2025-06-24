@@ -1,6 +1,15 @@
 {
   "extras": [
-
+    "lazyvim.plugins.extras.ai.copilot",
+    "lazyvim.plugins.extras.coding.yanky",
+    "lazyvim.plugins.extras.editor.telescope",
+    "lazyvim.plugins.extras.lang.cmake",
+    "lazyvim.plugins.extras.lang.git",
+    "lazyvim.plugins.extras.lang.java",
+    "lazyvim.plugins.extras.lang.json",
+    "lazyvim.plugins.extras.lang.kotlin",
+    "lazyvim.plugins.extras.util.dot",
+    "lazyvim.plugins.extras.vscode"
   ],
   "install_version": 8,
   "news": {

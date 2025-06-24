@@ -25,11 +25,3 @@ vim.diagnostic.config({
   update_in_insert = true,
 })
 
--- pick & preview colorschemes
-vim.keymap.set("n", "<leader>cs", function()
-  require("telescope.builtin").colorscheme({
-    enable_preview = true, -- live preview as you move
-  })
-end, { desc = "Choose colorscheme" })
-
-
