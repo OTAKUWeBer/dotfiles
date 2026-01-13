@@ -16,8 +16,8 @@ This repository contains my personal dotfiles and configuration for setting up a
     cd ~/
     git clone --depth 1 https://github.com/OTAKUWeBer/dotfiles
     cd dotfiles
-    sudo chmod +x install-est.sh
-    ./install-est.sh
+    sudo chmod +x scripts/install-est.sh
+    scripts/install-est.sh
     cd ..
     rm -rf dotfiles
     ```
@@ -49,8 +49,8 @@ This repository contains my personal dotfiles and configuration for setting up a
     cd dotfiles
     git submodule init && git submodule update --depth=1  # required for submodules
     stow -v .
-    sudo chmod +x install-pkgs.sh
-    ./install-pkgs.sh
+    sudo chmod +x scripts/install-pkgs.sh
+    scripts/install-pkgs.sh
     ```
 
 8. **Activate Zsh**:
