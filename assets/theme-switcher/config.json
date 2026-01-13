@@ -1,0 +1,14 @@
+{
+    "flavour": "mocha",
+    "color": "pink",
+    "exclude": [
+        "firefox",
+        "zshenv"
+    ],
+    "extra_options": {
+        "wallpaper": {
+            "wallpaper_type": "live",
+            "wall_name": null
+        }
+    }
+}
