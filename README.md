@@ -4,19 +4,17 @@ This repository contains my personal dotfiles and configuration for setting up a
 
 ## Installation Instructions
 
-1. **Install Arch Linux**: Install Arch Linux using any method you prefer.
+1. **Chroot into your fresh Arch installation** (if installing from Arch ISO).
 
-2. **Chroot into your fresh Arch installation**.
-
-3. **Install `git`**:
+2. **Install Git**:
     ```bash
     sudo pacman -S git
- 
     ```
-4. **Run the installation script**:
+
+3. **Clone the repository and run installer**:
     ```bash
     cd ~/
-    git clone https://github.com/OTAKUWeBer/dotfiles
+    git clone --depth 1 https://github.com/OTAKUWeBer/dotfiles
     cd dotfiles
     sudo chmod +x install-est.sh
     ./install-est.sh
@@ -24,38 +22,38 @@ This repository contains my personal dotfiles and configuration for setting up a
     rm -rf dotfiles
     ```
 
-5. **Exit chroot and reboot**:
+4. **Exit chroot and reboot**:
     ```bash
     exit
     reboot
     ```
 
-6. **Enable and start NetworkManager and systemd-resolved services**:
+5. **Enable essential services**:
     ```bash
     sudo systemctl enable --now NetworkManager.service
     sudo systemctl enable --now systemd-resolved.service
     ```
-    
-4. **Clone and apply dotfiles**:
+
+6. **Install `paru` AUR helper**:
     ```bash
     cd /tmp
     git clone https://aur.archlinux.org/paru.git
     cd paru
     makepkg -si
-    
+    ```
+
+7. **Apply dotfiles**:
+    ```bash
     cd ~/
     git clone --depth 1 https://github.com/OTAKUWeBer/dotfiles
     cd dotfiles
-    git submodule init
-    git submodule update --depth=1
+    git submodule init && git submodule update --depth=1  # required for submodules
     stow -v .
-
-    cd dotfiles
     sudo chmod +x install-pkgs.sh
     ./install-pkgs.sh
     ```
 
-8. **Activating zsh**
+8. **Activate Zsh**:
     ```bash
     chsh -s $(which zsh)
     ```
@@ -66,7 +64,7 @@ Check the [keybinds.md](https://github.com/OTAKUWeBer/dotfiles/blob/main/keybind
 
 ## Additional Configuration
 
-Ensure to customize the configuration files as needed to suit your preferences. 
+Customize the configuration files as needed to suit your preferences. 
 
 ## Contributing
 
