@@ -49,6 +49,13 @@ alias uninstall='paru -Rss'
 alias Hyprland='start-hyprland'
 alias cd='z'
 
+# Windows Mount
+
+alias win-mount='~/scripts/win-mount.sh mount'
+alias win-umount='~/scripts/win-mount.sh unmount'
+alias win-status='~/scripts/win-mount.sh status'
+
+
 ##### ─────────────────────────────────────
 ##### Oh-My-Zsh + Powerlevel10k
 ##### ─────────────────────────────────────
