@@ -11,29 +11,32 @@ fn main() {
     }
 
     let mut child = Command::new("wf-recorder")
-        .arg("-x")
-        .arg("yuv420p")
-        .arg("-f")
-        .arg(file_path)
-        .arg("-g")
-        .arg(slurp())
+        .arg("-c").arg("h264_vaapi")
+        .arg("-d").arg(detect_render_device())
+        .arg("-F").arg("scale_vaapi=format=nv12:out_range=full")
+        .arg("-p").arg("color_range=full")
+        .arg("-f").arg(file_path)
+        .arg("-g").arg(slurp())
         .arg("--audio=alsa_output.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-stereo-output.monitor")
-        .stderr(Stdio::piped())
+        .stderr(Stdio::piped())  // READ STDERR
         .spawn()
         .expect("Failed to spawn process");
 
-    let stderr = child.stderr.as_mut().expect("Failed to open stdout");
-
+    let stderr = child.stderr.as_mut().expect("Failed to open stderr");
     let reader = BufReader::new(stderr);
+
+    // notify only once
+    let mut notified = false;
 
     for line in reader.lines() {
         match line {
             Ok(line) => {
-                if line.contains("cpb") {
-                    notify("Recording Started")
+                if !notified && line.contains("Output #0") {
+                    notify("Recording Started");
+                    notified = true;
                 }
             }
-            Err(err) => eprintln!("Error reading stdout: {}", err),
+            Err(err) => eprintln!("Error reading stderr: {}", err),
         }
     }
 
@@ -77,4 +80,12 @@ fn copy_to_clipboard(text: &str) {
         .expect("error idk how")
         .wait()
         .expect("error again idk how");
+}
+
+fn detect_render_device() -> String {
+    if std::path::Path::new("/dev/dri/renderD128").exists() {
+        "/dev/dri/renderD128".to_string()
+    } else {
+        "/dev/dri/renderD129".to_string()
+    }
 }
