@@ -3,6 +3,7 @@
 ##### ─────────────────────────────────────
 if [[ -n "$DISPLAY" || -n "$WAYLAND_DISPLAY" ]]; then
   if [[ "$TERM_PROGRAM" != "vscode" ]]; then
+    # ~/assets/scripts/set_terminal_colors.sh # Comment this line for real colors of terminal
     fastfetch
   fi
 fi
