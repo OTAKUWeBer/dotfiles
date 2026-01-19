@@ -34,15 +34,15 @@ window#waybar.hidden {
 #workspaces button:hover {
     box-shadow: inherit;
     text-shadow: inherit;
-    color: #f5c2e7;
+    color: #89dceb;
 }
 
 #workspaces button.focused {
-    color: #f5c2e7;
+    color: #89dceb;
 }
 
 #workspaces button.active {
-    color: #f5c2e7;
+    color: #89dceb;
 }
 
 #workspaces button.urgent {
@@ -52,7 +52,7 @@ window#waybar.hidden {
 #window {
     padding-left: 5px;
     padding-right: 5px;
-    color: #f5c2e7; /* Default color for window names */
+    color: #89dceb; /* Default color for window names */
     background-color: transparent;
 }
 
@@ -71,7 +71,7 @@ window#waybar.hidden {
 #cpu:hover,
 #temperature:hover,
 #clock:hover {
-    color: #f5c2e7;
+    color: #89dceb;
 }
 
 #tray {
@@ -82,7 +82,7 @@ window#waybar.hidden {
 #custom-divider,
 #clock {
     background-color: transparent;
-    color: #f5c2e7;
+    color: #89dceb;
     border: none;
 }
 
