@@ -5,6 +5,9 @@
     // Current color theme for the workbench
     "workbench.colorTheme": "GitHub Dark High Contrast",
     
+    // For Modern PC to fix Font and VS code issues
+    "terminal.integrated.gpuAcceleration": "off",
+    
     // Customizations for the color scheme
     "workbench.colorCustomizations": {
         // Background color of the activity bar
