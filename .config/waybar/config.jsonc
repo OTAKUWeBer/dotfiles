@@ -1,15 +1,18 @@
 {
-    "height": 20,
+    "height": 34,
     "layer": "top",
+
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/mode",
         "hyprland/scratchpad"
     ],
+
     "modules-center": [
         "clock",
         "custom/exit"
     ],
+
     "modules-right": [
         "pulseaudio",
         "custom/divider",
@@ -18,8 +21,11 @@
         "custom/divider",
         "temperature",
         "custom/divider",
+        "custom/gpu_temp",
+        "custom/divider",
         "tray"
     ],
+
     "clock": {
         "format": "{:%a, %d. %b  %H:%M}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
@@ -35,15 +41,9 @@
                 "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
                 "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
             }
-        },
-        "actions": {
-            "on-click-right": "mode",
-            "on-click-forward": "tz_up",
-            "on-click-backward": "tz_down",
-            "on-scroll-up": "shift_up",
-            "on-scroll-down": "shift_down"
         }
     },
+
     "pulseaudio": {
         "max-volume": 150,
         "scroll-step": 5,
@@ -51,30 +51,28 @@
         "format-muted": "󰝟",
         "tooltip-format": "{volume}%",
         "format-icons": {
-            "default": [
-                "",
-                " ",
-                " "
-            ]
+            "default": ["", " ", " "]
         },
         "on-click": "pavucontrol",
         "on-click-right": "wpctl set-mute @DEFAULT_SINK@ toggle"
-
     },
+
     "custom/exit": {
         "format": " ⏻ ",
         "on-click": "wlogout",
         "tooltip": false
     },
+
     "memory": {
-        "format": ".:{used:0.1f}G ",
+        "format": " :{used:0.1f}G",
         "states": {
             "high": 70,
             "critical": 90
         },
         "on-click": "foot -e btop",
-        "tooltip-format": "{used} GB/{total} GB used ({percentage}%)\n{swapUsed} GB/{swapTotal} GB swap used ({swapPercentage}%)"
+        "tooltip-format": "{used} GB / {total} GB ({percentage}%)"
     },
+
     "cpu": {
         "format": " :{usage}%",
         "states": {
@@ -83,6 +81,7 @@
         },
         "on-click": "foot -e btop"
     },
+
     "temperature": {
         "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
         "critical-threshold": 80,
@@ -90,10 +89,19 @@
         "format-critical": "{temperatureC}°C ",
         "on-click": "foot -e btop"
     },
+
+    "custom/gpu_temp": {
+        "exec": "sh -c 'echo \"󰊗 :$(( $(cat /sys/class/hwmon/hwmon2/temp1_input) / 1000 ))°C\"'",
+        "interval": 2,
+        "tooltip": "AMD GPU Temperature",
+        "on-click": "foot -e btop"
+    },
+
     "custom/divider": {
         "format": "|",
         "tooltip": false
     },
+
     "tray": {
         "spacing": 5
     }
