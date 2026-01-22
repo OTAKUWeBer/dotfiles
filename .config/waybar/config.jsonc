@@ -91,7 +91,7 @@
     },
 
     "custom/gpu_temp": {
-        "exec": "sh -c 'echo \"󰊗 :$(( $(cat /sys/class/hwmon/hwmon2/temp1_input) / 1000 ))°C\"'",
+        "exec": "sh -c 'echo \" 󰊗 :$(( $(cat /sys/class/hwmon/hwmon2/temp1_input) / 1000 ))°C \"'",
         "interval": 2,
         "tooltip": "AMD GPU Temperature",
         "on-click": "foot -e btop"
