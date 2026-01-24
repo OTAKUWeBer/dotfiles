@@ -89,19 +89,3 @@ window#waybar.hidden {
 #custom-exit{
     color: #2c2c2c;
 }
-
-
-/* --- TEMPERATURE ALERTS --- */
-/* CPU/GPU turn red if critical */
-#temperature.critical,
-#custom-gpu_temp.critical {
-    color: #ff5555;
-    font-weight: bold;
-}
-
-/* Optional: warning (yellow/orange) */
-#temperature.warning,
-#custom-gpu_temp.warning {
-    color: #f1fa8c;
-    font-weight: bold;
-}
