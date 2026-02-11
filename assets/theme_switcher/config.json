@@ -1,6 +1,6 @@
 {
     "flavour": "mocha",
-    "color": "sky",
+    "color": "peach",
     "exclude": [
         "firefox",
         "zshenv"

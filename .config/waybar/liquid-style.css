@@ -1,0 +1,169 @@
+/* ================================================================
+   LIQUID GLASS WAYBAR — GTK CSS (no backdrop-filter)
+   Glass effect via linear-gradient + layered box-shadow
+   ================================================================ */
+
+* {
+  font-family: "CaskaydiaCove Nerd Font", monospace, sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Main bar ===== */
+#waybar {
+  background: transparent;
+  color: black;
+  border-radius: 18px;
+  padding: 6px 10px;
+}
+
+/* ================================================================
+   SHARED LIQUID GLASS BASE — GTK-safe properties only
+   
+   The glass look is built from three layers in one gradient:
+     1. Top-left specular streak  (bright white, angled)
+     2. Iridescent chromatic body (blue→peach→violet tint)
+     3. Solid semi-transparent base
+   
+   Depth comes from inset box-shadows simulating:
+     - top rim highlight  (inset bright)
+     - bottom rim shadow  (inset dark)
+     + outer drop shadow for lift
+   ================================================================ */
+
+#workspaces button,
+#window,
+#pulseaudio,
+#memory,
+#cpu,
+#temperature,
+#custom-gpu_temp,
+#clock,
+#tray {
+  /* Specular glare streak fading into chromatic glass body */
+  background: linear-gradient(
+    158deg,
+    rgba(255, 255, 255, 0.52) 0%,
+    rgba(255, 255, 255, 0.20) 18%,
+    rgba(190, 220, 255, 0.12) 35%,
+    rgba(255, 195, 155, 0.09) 58%,
+    rgba(205, 185, 255, 0.11) 80%,
+    rgba(255, 255, 255, 0.06) 100%
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.42);
+
+  /* Layered shadows: outer lift + inset top highlight + inset bottom depth */
+  box-shadow:
+    0 4px 18px rgba(0, 0, 0, 0.28),
+    0 1px 4px  rgba(0, 0, 0, 0.18),
+    inset 0  1px 0 rgba(255, 255, 255, 0.70),
+    inset 0 -1px 0 rgba(0,   0,   0,   0.15),
+    inset 1px 0  0 rgba(255, 255, 255, 0.18),
+    inset -1px 0 0 rgba(0,   0,   0,   0.08);
+
+  color: black;
+  border-radius: 14px;
+  transition: background 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+/* ===== Workspaces ===== */
+#workspaces button {
+  padding: 4px 12px;
+}
+
+#workspaces button:hover,
+#window:hover,
+#pulseaudio:hover,
+#memory:hover,
+#cpu:hover,
+#temperature:hover,
+#custom-gpu_temp:hover,
+#clock:hover {
+  /* Hover: stronger glare, brighter body */
+  background: linear-gradient(
+    155deg,
+    rgba(255, 255, 255, 0.68) 0%,
+    rgba(255, 255, 255, 0.30) 20%,
+    rgba(175, 215, 255, 0.17) 38%,
+    rgba(255, 185, 140, 0.13) 60%,
+    rgba(210, 185, 255, 0.15) 82%,
+    rgba(255, 255, 255, 0.10) 100%
+  );
+
+  border-color: rgba(255, 255, 255, 0.58);
+
+  box-shadow:
+    0 6px 24px rgba(0, 0, 0, 0.30),
+    0 2px 6px  rgba(0, 0, 0, 0.18),
+    inset 0  1px 0 rgba(255, 255, 255, 0.85),
+    inset 0 -1px 0 rgba(0,   0,   0,   0.12),
+    inset 1px 0  0 rgba(255, 255, 255, 0.28),
+    inset -1px 0 0 rgba(0,   0,   0,   0.06),
+    0 0 14px rgba(200, 210, 255, 0.12);
+}
+
+/* ===== Active / focused workspace ===== */
+#workspaces button.focused,
+#workspaces button.active {
+  background: linear-gradient(
+    158deg,
+    rgba(255, 255, 255, 0.72) 0%,
+    rgba(255, 255, 255, 0.32) 18%,
+    rgba(170, 215, 255, 0.18) 36%,
+    rgba(255, 180, 135, 0.14) 58%,
+    rgba(215, 185, 255, 0.17) 80%,
+    rgba(255, 255, 255, 0.11) 100%
+  );
+
+  border-color: rgba(255, 255, 255, 0.62);
+
+  box-shadow:
+    0 6px 22px rgba(0, 0, 0, 0.28),
+    inset 0  2px 0 rgba(255, 255, 255, 0.88),
+    inset 0 -1px 0 rgba(0,   0,   0,   0.13),
+    inset 1px 0  0 rgba(255, 255, 255, 0.30),
+    inset -1px 0 0 rgba(0,   0,   0,   0.07),
+    0 0 18px rgba(215, 215, 255, 0.16),
+    0 0 30px rgba(250, 179, 135, 0.08);
+}
+
+/* ===== Urgent workspace ===== */
+#workspaces button.urgent {
+  background: linear-gradient(
+    158deg,
+    rgba(255, 130, 110, 0.60) 0%,
+    rgba(255, 80,  60,  0.28) 30%,
+    rgba(175, 9,   9,   0.20) 100%
+  );
+
+  border-color: rgba(255, 110, 90, 0.55);
+  color: #ff7070;
+
+  box-shadow:
+    0 4px 18px rgba(175, 9, 9, 0.35),
+    inset 0 1px 0 rgba(255, 180, 160, 0.55),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.20),
+    0 0 14px rgba(255, 80, 60, 0.22);
+}
+
+/* ===== Window title ===== */
+#window {
+  padding: 0 12px;
+}
+
+/* ===== Right modules ===== */
+#pulseaudio,
+#memory,
+#cpu,
+#temperature,
+#custom-gpu_temp,
+#clock {
+  padding: 0 12px;
+}
+
+/* ===== Tray ===== */
+#tray {
+  padding: 4px 10px;
+}

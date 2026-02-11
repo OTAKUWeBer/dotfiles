@@ -8,7 +8,7 @@
 /* Main bar: fully transparent, floating look */
 #waybar {
     background: transparent; /* fully see-through */
-    color: #cdd6f4;
+    color: #fab387;
     border-radius: 18px;
     padding: 4px 8px;
     box-shadow: none; /* remove shadow for full transparency */
@@ -19,31 +19,30 @@
     padding: 4px 12px;
     border-radius: 12px;
     background-color: rgba(0, 0, 0, 0.7); /* dark pill with 0.7 opacity */
-    color: #cdd6f4;
+    color: white;
     transition: all 0.2s ease;
 }
 
 /* Hover & active states */
 #workspaces button:hover {
     background-color: rgba(137, 220, 235, 0.3);
-    color: #89dceb;
 }
 #workspaces button.focused,
 #workspaces button.active {
-    background-color: rgba(137, 220, 235, 0.5);
-    color: #89dceb;
+    color: #fab387;
 }
+
 #workspaces button.urgent {
     background-color: rgba(175, 9, 9, 0.5);
-    color: #af0909;
+    color: #af0909; /* urgent stays red */
 }
 
 /* Window title module: pill-style */
 #window {
     padding: 0 10px;
     border-radius: 12px;
-    background-color: rgba(0, 0, 0, 0.7); /* changed to 0.7 opacity */
-    color: #89dceb;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fab387;
     transition: all 0.2s ease;
 }
 
@@ -56,8 +55,8 @@
 #clock {
     padding: 0 10px;
     border-radius: 12px;
-    background-color: rgba(0, 0, 0, 0.7); /* changed to 0.7 opacity */
-    color: #cdd6f4;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fab387;
     transition: all 0.2s ease;
 }
 
@@ -69,13 +68,13 @@
 #custom-gpu_temp:hover,
 #clock:hover {
     background-color: rgba(137, 220, 235, 0.25);
-    color: #89dceb;
+    color: #fab387;
 }
 
 /* Tray icons: pill-style background */
 #tray {
     padding: 4px 8px;
     border-radius: 12px;
-    background-color: rgba(0, 0, 0, 0.7); /* changed to 0.7 opacity */
+    background-color: rgba(0, 0, 0, 0.7);
     transition: all 0.2s ease;
 }

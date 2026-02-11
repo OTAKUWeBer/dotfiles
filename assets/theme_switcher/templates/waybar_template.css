@@ -19,20 +19,19 @@
     padding: 4px 12px;
     border-radius: 12px;
     background-color: rgba(0, 0, 0, 0.7); /* dark pill with 0.7 opacity */
-    color: {{main_colorscheme}};
+    color: white;
     transition: all 0.2s ease;
 }
 
 /* Hover & active states */
 #workspaces button:hover {
     background-color: rgba(137, 220, 235, 0.3);
-    color: {{main_colorscheme}};
 }
 #workspaces button.focused,
 #workspaces button.active {
-    background-color: rgba(137, 220, 235, 0.5);
     color: {{main_colorscheme}};
 }
+
 #workspaces button.urgent {
     background-color: rgba(175, 9, 9, 0.5);
     color: #af0909; /* urgent stays red */
