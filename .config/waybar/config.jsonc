@@ -1,11 +1,13 @@
 {
     "height": 34,
     "layer": "top",
+    "margin-top": 10,
+    "margin-bottom": 10,
+    "margin-left": 10,
+    "margin-right": 10,
 
     "modules-left": [
-        "hyprland/workspaces",
-        "hyprland/mode",
-        "hyprland/scratchpad"
+        "hyprland/workspaces"
     ],
 
     "modules-center": [
@@ -91,7 +93,7 @@
     },
 
     "custom/gpu_temp": {
-        "exec": "sh -c 'echo \" 󰊗 :$(( $(cat /sys/class/hwmon/hwmon2/temp1_input) / 1000 ))°C \"'",
+        "exec": "sh -c 'echo \"󰊗 :$(( $(cat /sys/class/hwmon/hwmon2/temp1_input) / 1000 ))°C\"'",
         "interval": 2,
         "tooltip": "AMD GPU Temperature",
         "on-click": "foot -e btop"
