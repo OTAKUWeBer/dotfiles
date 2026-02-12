@@ -4,7 +4,7 @@ from typing import Any
 
 from base import run_shell_command
 
-CONFIG_PATH = os.path.expanduser("~/dotfiles/.config/hypr/config.d/looks.conf")
+CONFIG_PATH = os.path.expanduser("~/dotfiles/.config/hypr/config.d/looks/general.conf")
 CONFIG_TEMPLATE_PATH = "./templates/hypr_template.conf"
 
 
