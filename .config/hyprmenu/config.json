@@ -1,0 +1,59 @@
+{
+  "theme": {
+    "primaryColor": "#F38BA8",
+    "backgroundColor": "#1E1E2E"
+  },
+  "window": {
+    "width": 400,
+    "height": 1000
+  },
+  "directories": [
+    {
+      "label": "Home",
+      "path": "~/",
+      "icon": "home"
+    },
+    {
+      "label": "Downloads",
+      "path": "~/Downloads",
+      "icon": "download"
+    },
+    {
+      "label": "Documents",
+      "path": "~/Documents",
+      "icon": "folder"
+    },
+    {
+      "label": "Pictures",
+      "path": "~/Pictures",
+      "icon": "image"
+    },
+    {
+      "label": "Videos",
+      "path": "~/Videos",
+      "icon": "movie"
+    }
+  ],
+  "apps": [
+    {
+      "name": "Browser",
+      "command": "firefox",
+      "icon": "web"
+    },
+    {
+      "name": "Discord",
+      "command": "vesktop",
+      "icon": "chat"
+    },
+    {
+      "name": "Spotify",
+      "command": "spotify",
+      "icon": "music_note"
+    },
+    {
+      "name": "Terminal",
+      "command": "kitty",
+      "icon": "terminal"
+    }
+  ]
+}
