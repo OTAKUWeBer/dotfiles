@@ -7,6 +7,7 @@
     "margin-right": 10,
 
     "modules-left": [
+        "custom/menu",
         "hyprland/workspaces"
     ],
 
@@ -44,6 +45,12 @@
                 "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
             }
         }
+    },
+
+    "custom/menu": {
+        "format": "   ",
+        "tooltip": "Menu",
+        "on-click": "gtk-launch hyprmenu"
     },
 
     "pulseaudio": {
