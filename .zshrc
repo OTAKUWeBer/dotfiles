@@ -33,6 +33,14 @@ export PERL_MM_OPT="INSTALL_BASE=$HOME/perl5"
 # Extra tools
 export PATH=$HOME/.console-ninja/.bin:$PATH
 
+# Local Claude / llama.cpp server
+export ANTHROPIC_API_KEY=""
+export ANTHROPIC_BASE_URL=http://localhost:11434
+export ANTHROPIC_AUTH_TOKEN=ollama
+export OLLAMA_VULKAN=1
+export HSA_OVERRIDE_GFX_VERSION="12.0.1"
+
+
 ##### ─────────────────────────────────────
 ##### Aliases
 ##### ─────────────────────────────────────
@@ -90,3 +98,15 @@ source ~/assets/omz-custom/.zsh_files/catppuccin_mocha-zsh-syntax-highlighting.z
 ##### Tools
 ##### ─────────────────────────────────────
 eval "$(zoxide init zsh)"
+
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+# Added by CodeRabbit CLI installer
+export PATH="/home/weberz/.local/bin:$PATH"
+
+export PATH=$PATH:/home/weberz/.spicetify

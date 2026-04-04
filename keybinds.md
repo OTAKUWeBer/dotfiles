@@ -26,7 +26,7 @@
 ### **Clipboard Management**
 | Key Binding                      | Action                                     |
 |-----------------------------------|--------------------------------------------|
-| Windows + C                       | Open clipboard manager.                   |
+| Windows + V                       | Open clipboard manager.                   |
 | Windows + CTRL + C                | Clear clipboard history.                  |
 
 ### **Screenshots & Recording**
