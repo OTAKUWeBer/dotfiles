@@ -110,3 +110,4 @@ eval "$(pyenv init -)"
 export PATH="/home/weberz/.local/bin:$PATH"
 
 export PATH=$PATH:/home/weberz/.spicetify
+export PATH="$HOME/.bun/bin:$PATH"

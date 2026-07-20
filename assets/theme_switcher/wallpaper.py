@@ -54,5 +54,5 @@ def update(_: str, color: str, extra_options: dict[str, Any]):
         f.write(new_file)
 
     run_shell_command(
-        f"swww img {os.path.join(wallpapers_path, wall_name)} --transition-step 255"
+        f"awww img {os.path.join(wallpapers_path, wall_name)} --transition-step 255"
     )
