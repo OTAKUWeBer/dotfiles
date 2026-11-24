@@ -3,7 +3,7 @@
 GRUB_DEFAULT=2
 GRUB_TIMEOUT=10
 GRUB_DISTRIBUTOR="Arch"
-GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet"
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet fbcon=rotate:2"
 GRUB_CMDLINE_LINUX=""
 
 # Preload both GPT and MBR modules so that they are not missed
@@ -61,3 +61,5 @@ GRUB_THEME="/boot/grub/themes/joker/theme.txt"
 # functionality install os-prober and uncomment to detect and include other
 # operating systems.
 GRUB_DISABLE_OS_PROBER=false
+GRUB_DISABLE_BOOTNEXT=true
+
